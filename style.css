@@ -1,44 +1,36 @@
-/* .container {
-    max-width: 400px;
-    margin: 10vh auto 0 auto;
-    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
 }
 
-#display {
-    text-align: right;
-    height: 70px;
-    line-height: 70px;
-    padding: 16px 8px;
-    font-size: 25px;
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
 }
 
-.buttons {
-    display: grid;
-    border-bottom: 1px solid #999;
-    border-left: 1px solid#999;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
 }
 
-.buttons > div {
-    border-top: 1px solid #999;
-    border-right: 1px solid#999;
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
 }
 
-.button {
-    border: 0.5px solid #999;
-    line-height: 100px;
-    text-align: center;
-    font-size: 25px;
-    cursor: pointer;
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }
-
-#equal {
-    background-color: rgb(85, 85, 255);
-    color: white;
-}
-
-.button:hover {
-    background-color: #323330;
-    color: white;
-    transition: 0.5s ease-in-out;
-} */
