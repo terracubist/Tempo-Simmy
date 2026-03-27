@@ -15,6 +15,17 @@ function openTab(evt, tabName) {
 document.getElementById("defaultOpen").click();
 
 (async () => {
-  const pyodide = await loadPyodide()
+  const pyodide = await loadPyodide();
+
+  // Set up a custom batched handler to capture print output
+  pyodide.setStdout({
+    batched: (message) => {
+      outputArray.push(message);
+    }
+  });
+
   pyodide.runPython(await (await fetch("./pyodide_test.py")).text())
+
+  // The output is now in the JavaScript array
+  console.log("Captured output:", outputArray.join('\\n'));
 })();
