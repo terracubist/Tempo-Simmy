@@ -24,6 +24,9 @@ document.getElementById("defaultOpen").click();
     }
   });
 
+  // install dependencies
+  await pyodide.loadPackage("pandas")
+
   pyodide.runPython(await (await fetch("./pyodide_test.py")).text())
 
   // The output is now in the JavaScript array
