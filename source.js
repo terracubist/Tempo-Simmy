@@ -16,5 +16,5 @@ document.getElementById("defaultOpen").click();
 
 (async () => {
   const pyodide = await loadPyodide()
-  console.log(pyodide.runPython('import sys; sys.version'))
+  pyodide.runPython(await (await fetch("./pyodide_test.py")).text()))
 })();
