@@ -1,2 +1,5 @@
 import sys
-print(sys.version)
+import pandas as pd
+
+print(f"sys.version is: {sys.version}")
+print(f"pd.version is: {pd.version}")
