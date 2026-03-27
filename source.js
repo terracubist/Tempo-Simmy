@@ -18,6 +18,7 @@ document.getElementById("defaultOpen").click();
   const pyodide = await loadPyodide();
 
   // Set up a custom batched handler to capture print output
+  const outputArray = [];
   pyodide.setStdout({
     batched: (message) => {
       outputArray.push(message);
