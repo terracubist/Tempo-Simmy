@@ -26,8 +26,8 @@ document.getElementById("defaultOpen").click();
   });
 
   // install dependencies
-  await pyodide.loadPackage("pandas")
-  await pyodide.loadPackage("numpy")
+  // await pyodide.loadPackage("pandas")
+  // await pyodide.loadPackage("numpy")
 
   pyodide.runPython(await (await fetch("./pyodide_test.py")).text())
 

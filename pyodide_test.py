@@ -1,6 +1,8 @@
 import sys
-import pandas as pd
-import numpy as np
+
+
+# import pandas as pd
+# import numpy as np
 
 print(f"sys.version is: {sys.version}")
 # print(f"pd.version is: {pd.__version__}")
