@@ -16,5 +16,5 @@ document.getElementById("defaultOpen").click();
 
 (async () => {
   const pyodide = await loadPyodide()
-  pyodide.runPython(await (await fetch("./pyodide_test.py")).text()))
+  pyodide.runPython(await (await fetch("./pyodide_test.py")).text())
 })();
