@@ -13,3 +13,6 @@ function openCity(evt, cityName) {
 }
 
 document.getElementById("defaultOpen").click();
+
+const pyodide = await loadPyodide()
+console.log(pyodide.runPython('import sys; sys.version'))
