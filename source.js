@@ -14,8 +14,11 @@ function openTab(evt, tabName) {
 
 document.getElementById("defaultOpen").click();
 
-(async () => {
+async function startPyodide() {
+
+  // load pyodide
   const pyodide = await loadPyodide();
+  window.pyodide = pyodide;
 
   // Set up a custom batched handler to capture print output
   const outputArray = [];
@@ -25,12 +28,20 @@ document.getElementById("defaultOpen").click();
     }
   });
 
-  // install dependencies
-  await pyodide.loadPackage("pandas")
-  await pyodide.loadPackage("numpy")
+  // install dependencies  
+  // Define the callback function to update the progress bar
+  const statusMessage = document.getElementById('status-message');
+  await pyodide.loadPackage(["pandas", "numpy", "scipy", "networkx"], {
+    messageCallback: (message) => {
+        console.log("Loading progress:", message);
+    },
+    errorCallback: (error) => {
+        console.error("Loading error:", error);
+    }})
+  statusMessage.textContent = "Simulation environment loaded.";
 
   pyodide.runPython(await (await fetch("./pyodide_test.py")).text())
-
   // The output is now in the JavaScript array
-  console.log("Captured output:", outputArray.join('\\n'));
-})();
+  console.log("Captured output:\n", outputArray.join('\n'));
+}
+startPyodide();
