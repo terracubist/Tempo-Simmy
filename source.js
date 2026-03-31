@@ -14,9 +14,13 @@ function openTab(evt, tabName) {
 
 document.getElementById("defaultOpen").click();
 
+<<<<<<< Updated upstream
 async function startPyodide() {
 
   // load pyodide
+=======
+async function startPyodideEnv() {
+>>>>>>> Stashed changes
   const pyodide = await loadPyodide();
   window.pyodide = pyodide;
 
@@ -28,6 +32,7 @@ async function startPyodide() {
     }
   });
 
+<<<<<<< Updated upstream
   // install dependencies  
   // Define the callback function to update the progress bar
   const statusMessage = document.getElementById('status-message');
@@ -39,9 +44,26 @@ async function startPyodide() {
         console.error("Loading error:", error);
     }})
   statusMessage.textContent = "Simulation environment loaded.";
+=======
+  // load dependencies
+  const status_indicator = document.getElementById("load-status");
+  await pyodide.loadPackage(["pandas", "numpy", "scipy", "networkx"], (message) => {
+        // 'message' often contains strings like "Loading..." or progress data
+        console.log("Loading packages...");
+    }
+  ).then(() => {
+      status_indicator.textContent = "Finished loading.";
+  });
+>>>>>>> Stashed changes
 
   pyodide.runPython(await (await fetch("./pyodide_test.py")).text())
   // The output is now in the JavaScript array
+<<<<<<< Updated upstream
   console.log("Captured output:\n", outputArray.join('\n'));
 }
 startPyodide();
+=======
+  console.log("Captured output:", outputArray.join('\n'));
+}
+// startPyodideEnv(); //disabling while figuring out html/css
+>>>>>>> Stashed changes

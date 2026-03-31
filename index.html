@@ -29,20 +29,46 @@
             
             <div class="tab">
               <button class="tablinks" onclick="openTab(event, 'Simulate')" id="defaultOpen">Simulate</button>
-              <button class="tablinks" onclick="openTab(event, 'Settings')">Settings</button>
+              <button class="tablinks" onclick="openTab(event, 'Simulation Settings')">Simulation Settings</button>
+              <button class="tablinks" onclick="openTab(event, 'Player Profiles')">Player Profiles</button>
+              <button class="tablinks" onclick="openTab(event, 'Import/Export')">Import/Export</button>
               <button class="tablinks" onclick="openTab(event, 'About')">About</button>
             </div>
             
             <div id="Simulate" class="tabcontent">
               <!-- <h3>Run and visualize</h3> -->
               <!-- <p>placeholder text</p> -->
+<<<<<<< Updated upstream
               <!-- <progress id="progress-bar" value="0" max="100"></progress> -->
               <div id="status-message">Loading simulation environment...</div>
+=======
+              <div id="load-status">Loading simulation environment...</div>
+>>>>>>> Stashed changes
             </div>
             
-            <div id="Settings" class="tabcontent">
+            <div id="Simulation Settings" class="tabcontent active-tab">
               <!-- <h3>Settings</h3> -->
-              <p>Configure simulation here</p> 
+              <div id="sim-header">Configure simulation here</div>
+
+              <div class="column">
+                  Content for column 1
+              </div>
+              <div class="column">
+                  Content for column 2
+              </div>
+              <div class="column">
+                  Content for column 3
+              </div>
+            </div>
+            
+            <div id="Player Profiles" class="tabcontent">
+              <!-- <h3>Settings</h3> -->
+              <p>Edit player strength profiles here</p> 
+            </div>
+            
+            <div id="Import/Export" class="tabcontent">
+              <!-- <h3>Settings</h3> -->
+              <p>Import/Export settings</p> 
             </div>
             
             <div id="About" class="tabcontent">
