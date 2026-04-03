@@ -39,21 +39,61 @@
             <div id="Simulate" class="tabcontent">
               <!-- <h3>Run and visualize</h3> -->
               <!-- <p>placeholder text</p> -->
-<<<<<<< Updated upstream
-              <!-- <progress id="progress-bar" value="0" max="100"></progress> -->
-              <div id="status-message">Loading simulation environment...</div>
-=======
               <div id="load-status">Loading simulation environment...</div>
->>>>>>> Stashed changes
             </div>
             
-            <div id="Simulation Settings" class="tabcontent active-tab">
+            <div id="Simulation Settings" class="sim-tab tabcontent">
               <!-- <h3>Settings</h3> -->
-              <div id="sim-header">Configure simulation here</div>
+              <!-- <div id="sim-header">Configure simulation here</div> -->
 
-              <div class="column">
-                  Content for column 1
+              <div class="left-column">
+                  <!-- Num sims -->
+                  <div class="dropdown-container">
+                      <label for="n_sim" style="display: block; margin-bottom: 5px;">Num sims:</label>
+                      <select id="n_sim" class="custom-select">
+                          <option>1</option>
+                          <option>10</option>
+                          <option>100</option>
+                          <option>1E3</option>
+                          <option>1E4</option>
+                          <option>1E5</option>
+                      </select>
+                  </div>
+
+                  <!-- Start stage -->
+                  <div class="dropdown-container">
+                      <label for="start_stage" style="display: block; margin-bottom: 5px;">Start stage:</label>
+                      <select id="start_stage" class="custom-select">
+                          <option>2-1</option>
+                          <option>2-2</option>
+                          <option>2-3</option>
+                          <option>2-5</option>
+                          <option>2-6</option>
+                          <option>2-7</option>
+                          <option>3-1</option>
+                          <option>3-2</option>
+                          <option>3-3</option>
+                          <option>3-5</option>
+                          <option>3-6</option>
+                          <option>3-7</option>
+                          <option>4-1</option>
+                          <option>4-2</option>
+                          <option>4-3</option>
+                          <option>4-5</option>
+                          <option>4-6</option>
+                          <option>4-7</option>
+                          <option>5-1</option>
+                          <option>5-2</option>
+                          <option>5-3</option>
+                          <option>5-5</option>
+                          <option>5-6</option>
+                          <option>5-7</option>
+                      </select>
+                  </div>
+
+                  
               </div>
+
               <div class="column">
                   Content for column 2
               </div>

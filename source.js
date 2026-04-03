@@ -8,19 +8,16 @@ function openTab(evt, tabName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(tabName).style.display = "block";
+  if (tabName === "Simulation Settings") {
+    document.getElementById(tabName).style.display = "flex";
+  } else {
+    document.getElementById(tabName).style.display = "block";
+  }
   evt.currentTarget.className += " active";
 }
 
-document.getElementById("defaultOpen").click();
-
-<<<<<<< Updated upstream
-async function startPyodide() {
-
-  // load pyodide
-=======
 async function startPyodideEnv() {
->>>>>>> Stashed changes
+
   const pyodide = await loadPyodide();
   window.pyodide = pyodide;
 
@@ -32,19 +29,6 @@ async function startPyodideEnv() {
     }
   });
 
-<<<<<<< Updated upstream
-  // install dependencies  
-  // Define the callback function to update the progress bar
-  const statusMessage = document.getElementById('status-message');
-  await pyodide.loadPackage(["pandas", "numpy", "scipy", "networkx"], {
-    messageCallback: (message) => {
-        console.log("Loading progress:", message);
-    },
-    errorCallback: (error) => {
-        console.error("Loading error:", error);
-    }})
-  statusMessage.textContent = "Simulation environment loaded.";
-=======
   // load dependencies
   const status_indicator = document.getElementById("load-status");
   await pyodide.loadPackage(["pandas", "numpy", "scipy", "networkx"], (message) => {
@@ -54,16 +38,11 @@ async function startPyodideEnv() {
   ).then(() => {
       status_indicator.textContent = "Finished loading.";
   });
->>>>>>> Stashed changes
 
   pyodide.runPython(await (await fetch("./pyodide_test.py")).text())
-  // The output is now in the JavaScript array
-<<<<<<< Updated upstream
-  console.log("Captured output:\n", outputArray.join('\n'));
+
 }
-startPyodide();
-=======
-  console.log("Captured output:", outputArray.join('\n'));
-}
+
+document.getElementById("defaultOpen").click();
 // startPyodideEnv(); //disabling while figuring out html/css
->>>>>>> Stashed changes
+// console.log("Captured output:", outputArray.join('\n'));
