@@ -49,11 +49,11 @@
               <div class="left-column">
                   <!-- Num sims -->
                   <div class="dropdown-container">
-                      <label for="n_sim" style="display: block; margin-bottom: 5px;">Num sims:</label>
-                      <select id="n_sim" class="custom-select">
+                      <label for="n_sims" style="display: block; margin-bottom: 5px;">Num sims:</label>
+                      <select id="n_sims" class="custom-select">
                           <option>1</option>
                           <option>10</option>
-                          <option>100</option>
+                          <option selected>100</option>
                           <option>1E3</option>
                           <option>1E4</option>
                           <option>1E5</option>
@@ -64,7 +64,7 @@
                   <div class="dropdown-container">
                       <label for="start_stage" style="display: block; margin-bottom: 5px;">Start stage:</label>
                       <select id="start_stage" class="custom-select">
-                          <option>2-1</option>
+                          <option selected>2-1</option>
                           <option>2-2</option>
                           <option>2-3</option>
                           <option>2-5</option>
@@ -88,23 +88,382 @@
                           <option>5-5</option>
                           <option>5-6</option>
                           <option>5-7</option>
+                          <option>6-1</option>
+                          <option>6-2</option>
+                          <option>6-3</option>
+                          <option>6-5</option>
+                          <option>6-6</option>
+                          <option>6-7</option>
+                          <option>7-1</option>
+                          <option>7-2</option>
+                          <option>7-3</option>
+                          <option>7-5</option>
+                          <option>7-6</option>
                       </select>
+                  </div>
+
+                  <!-- Starting HP -->
+                  <div select id="start_HP" class="table-container">
+                      <table>
+                          <thead>
+                              <tr>
+                                  <th>Player</th>
+                                  <th>Starting HP</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>1</td>
+                                  <td contenteditable="true">100</td>
+                              </tr>
+                              <tr>
+                                  <td>2</td>
+                                  <td contenteditable="true">100</td>
+                              </tr>
+                              <tr>
+                                  <td>3</td>
+                                  <td contenteditable="true">100</td>
+                              </tr>
+                              <tr>
+                                  <td>4</td>
+                                  <td contenteditable="true">100</td>
+                              </tr>
+                              <tr>
+                                  <td>5</td>
+                                  <td contenteditable="true">100</td>
+                              </tr>
+                              <tr>
+                                  <td>6</td>
+                                  <td contenteditable="true">100</td>
+                              </tr>
+                              <tr>
+                                  <td>7</td>
+                                  <td contenteditable="true">100</td>
+                              </tr>
+                              <tr>
+                                  <td>8</td>
+                                  <td contenteditable="true">100</td>
+                              </tr>
+                          </tbody>
+                      </table>
                   </div>
 
                   
               </div>
 
               <div class="column">
-                  Content for column 2
+                  <!-- Avg level -->
+                  <p><b>Max level</b> (used to determine max damage taken)</p>
+                  <div select id="max_level" class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Stage</th>
+                                <th>Max level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2-1</td>
+                                <td contenteditable="true">4</td>
+                            </tr>
+                            <tr>
+                                <td>2-2</td>
+                                <td contenteditable="true">4</td>
+                            </tr>
+                            <tr>
+                                <td>2-3</td>
+                                <td contenteditable="true">5</td>
+                            </tr>
+                            <tr>
+                                <td>2-5</td>
+                                <td contenteditable="true">5</td>
+                            </tr>
+                            <tr>
+                                <td>2-6</td>
+                                <td contenteditable="true">6</td>
+                            </tr>
+                            <tr>
+                                <td>2-7</td>
+                                <td contenteditable="true">6</td>
+                            </tr>
+                            <tr>
+                                <td>3-1</td>
+                                <td contenteditable="true">6</td>
+                            </tr>
+                                <td>3-2</td>
+                                <td contenteditable="true">7</td>
+                            </tr>
+                            </tr>
+                                <td>3-3</td>
+                                <td contenteditable="true">7</td>
+                            </tr>
+                            </tr>
+                                <td>3-5</td>
+                                <td contenteditable="true">7</td>
+                            </tr>
+                            </tr>
+                                <td>3-6</td>
+                                <td contenteditable="true">7</td>
+                            </tr>
+                            </tr>
+                                <td>3-7</td>
+                                <td contenteditable="true">8</td>
+                            </tr>
+                            </tr>
+                                <td>4-1</td>
+                                <td contenteditable="true">8</td>
+                            </tr>
+                            </tr>
+                                <td>4-2</td>
+                                <td contenteditable="true">9</td>
+                            </tr>
+                            </tr>
+                                <td>4-3</td>
+                                <td contenteditable="true">9</td>
+                            </tr>
+                            </tr>
+                                <td>4-5</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>4-6</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>4-7</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>5-1</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>5-2</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>5-3</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>5-5</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>5-6</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>5-7</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>6-1</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>6-2</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>6-3</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>6-5</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>6-6</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>6-7</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>7-1</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>7-2</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>7-3</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>7-5</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                            </tr>
+                                <td>7-6</td>
+                                <td contenteditable="true">10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
               </div>
               <div class="column">
-                  Content for column 3
+                  <b>Matchups</b>
+                  <!-- Matchup table -->
+                  <div id="matchups_table">
+                      <table>
+                          <thead>
+                              <tr>
+                                  <th></th>
+                                  <th>Vanilla</th>
+                                  <th>Rock</th>
+                                  <th>Paper</th>
+                                  <th>Scissors</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td><b>Vanilla</b></td>
+                                  <td class="locked-cell">1.0</td>
+                                  <td class="unlocked-cell"><div contenteditable="true">1.0</div></td>
+                                  <td class="unlocked-cell"><div contenteditable="true">1.0</div></td>
+                                  <td class="unlocked-cell"><div contenteditable="true">1.0</div></td>
+                              </tr>
+                              <tr>
+                                  <td><b>Rock</b></td>
+                                  <td></td>
+                                  <td class="locked-cell">1.0</td>
+                                  <td class="unlocked-cell"><div contenteditable="true">0.5</div></td>
+                                  <td class="unlocked-cell"><div contenteditable="true">2.0</div></td>
+                              </tr>
+                              <tr>
+                                  <td><b>Paper</b></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td class="locked-cell">1.0</td>
+                                  <td class="unlocked-cell"><div contenteditable="true">0.5</div></td>
+                              <tr>
+                                  <td><b>Scissors</b></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td class="locked-cell">1.0</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+
+                  <!-- Stage damage -->
+                  <p><b>Stage damage</b></p>
+                  <div id="stage_damage_table">
+                      <table>
+                          <thead>
+                              <tr>
+                                  <th>Stage</th>
+                                  <th>Base damage</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>2</td>
+                                  <td contenteditable="true">2</td>
+                              </tr>
+                              <tr>
+                                  <td>3</td>
+                                  <td contenteditable="true">6</td>
+                              </tr>
+                              <tr>
+                                  <td>4</td>
+                                  <td contenteditable="true">7</td>
+                              </tr>
+                              <tr>
+                                  <td>5</td>
+                                  <td contenteditable="true">10</td>
+                              </tr>
+                              <tr>
+                                  <td>6</td>
+                                  <td contenteditable="true">12</td>
+                              </tr>
+                              <tr>
+                                  <td>7</td>
+                                  <td contenteditable="true">17</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
               </div>
             </div>
             
-            <div id="Player Profiles" class="tabcontent">
-              <!-- <h3>Settings</h3> -->
-              <p>Edit player strength profiles here</p> 
+            <div id="Player Profiles" class="prof-tab tabcontent">
+
+              <div class="left-column">
+                <!-- Profile selection -->
+                <div class="dropdown-container">
+                    <label for="prof_sel" style="display: block; margin-bottom: 5px;">Select a profile to edit:</label>
+                    <select id="prof_sel" class="custom-select">
+                        <option selected>Player 1</option>
+                        <option>Player 2</option>
+                        <option>Player 3</option>
+                        <option>Player 4</option>
+                        <option>Player 5</option>
+                        <option>Player 6</option>
+                        <option>Player 7</option>
+                        <option>Player 8</option>
+                        <option>Standard fast 8</option>
+                        <option>Standard fast 9</option>
+                        <option>$1 RR</option>
+                        <option>$2 RR</option>
+                        <option>$3 RR</option>
+                        <option>Tempo</option>
+                        <option>Loss streak</option>
+                    </select>
+                </div>
+
+                <!-- Comp type selection -->
+                <div class="dropdown-container">
+                    <label for="comp_type" style="display: block; margin-bottom: 5px;">Comp type:</label>
+                    <select id="comp_type" class="custom-select">
+                        <option selected>Vanilla</option>
+                        <option>Rock</option>
+                        <option>Paper</option>
+                        <option>Scissors</option>
+                    </select>
+                </div>
+
+                <!-- Source selection -->
+                <div class="dropdown-container">
+                    <label for="profile_src" style="display: block; margin-bottom: 5px;">Define series using:</label>
+                    <select id="profile_src" class="custom-select">
+                        <option selected>User entry</option>
+                        <option>Standard fast 8</option>
+                        <option>Standard fast 9</option>
+                        <option>$1 RR</option>
+                        <option>$2 RR</option>
+                        <option>$3 RR</option>
+                        <option>Tempo</option>
+                        <option>Loss streak</option>
+                    </select>
+                </div>
+
+                <div select id="str_table" class="table-container">
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>Stage</th>
+                              <th>Strength</th>
+                              <th>Lambda</th>
+                          </tr>
+                      </thead>
+                      <tbody id="edit_str_table">
+                          <!-- populated by js -->
+                      </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="column">
+                Graphs here
+              </div>
+
             </div>
             
             <div id="Import/Export" class="tabcontent">
