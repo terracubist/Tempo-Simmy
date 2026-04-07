@@ -80,564 +80,602 @@ var playerProfilesMetadata = {
   "$3 RR": {"comp_type": "Vanilla", "defn": "User entry"},
   "Tempo": {"comp_type": "Vanilla", "defn": "User entry"},
   "Loss streak": {"comp_type": "Vanilla", "defn": "User entry"},
+  "Other": {"comp_type": "Vanilla", "defn": "User entry"}
 }
 
 // strength series definition
 var playerProfilesSeries = {
     "Player 1": [
-        {'stage': '2-1', 'strength': 35, 'lambda': ''},
-        {'stage': '2-2', 'strength': 40, 'lambda': ''},
-        {'stage': '2-3', 'strength': 45, 'lambda': ''},
-        {'stage': '2-5', 'strength': 50, 'lambda': ''},
-        {'stage': '2-6', 'strength': 55, 'lambda': ''},
-        {'stage': '2-7', 'strength': 60, 'lambda': ''},
-        {'stage': '3-1', 'strength': 65, 'lambda': ''},
-        {'stage': '3-2', 'strength': 70, 'lambda': ''},
-        {'stage': '3-3', 'strength': 75, 'lambda': ''},
-        {'stage': '3-5', 'strength': 80, 'lambda': ''},
-        {'stage': '3-6', 'strength': 85, 'lambda': ''},
-        {'stage': '3-7', 'strength': 90, 'lambda': ''},
-        {'stage': '4-1', 'strength': 95, 'lambda': ''},
-        {'stage': '4-2', 'strength': 100, 'lambda': ''},
-        {'stage': '4-3', 'strength': 105, 'lambda': ''},
-        {'stage': '4-5', 'strength': 110, 'lambda': ''},
-        {'stage': '4-6', 'strength': 115, 'lambda': ''},
-        {'stage': '4-7', 'strength': 120, 'lambda': ''},
-        {'stage': '5-1', 'strength': 125, 'lambda': ''},
-        {'stage': '5-2', 'strength': 130, 'lambda': ''},
-        {'stage': '5-3', 'strength': 135, 'lambda': ''},
-        {'stage': '5-5', 'strength': 140, 'lambda': ''},
-        {'stage': '5-6', 'strength': 145, 'lambda': ''},
-        {'stage': '5-7', 'strength': 150, 'lambda': ''},
-        {'stage': '6-1', 'strength': 155, 'lambda': ''},
-        {'stage': '6-2', 'strength': 160, 'lambda': ''},
-        {'stage': '6-3', 'strength': 165, 'lambda': ''},
-        {'stage': '6-5', 'strength': 170, 'lambda': ''},
-        {'stage': '6-6', 'strength': 175, 'lambda': ''},
-        {'stage': '6-7', 'strength': 180, 'lambda': ''},
-        {'stage': '7-1', 'strength': 185, 'lambda': ''},
-        {'stage': '7-2', 'strength': 190, 'lambda': ''},
-        {'stage': '7-3', 'strength': 195, 'lambda': ''},
-        {'stage': '7-5', 'strength': 200, 'lambda': ''},
-        {'stage': '7-6', 'strength': 205, 'lambda': ''}
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
     ],
     "Player 2": [
-        {'stage': '2-1', 'strength': 35, 'lambda': ''},
-        {'stage': '2-2', 'strength': 40, 'lambda': ''},
-        {'stage': '2-3', 'strength': 45, 'lambda': ''},
-        {'stage': '2-5', 'strength': 50, 'lambda': ''},
-        {'stage': '2-6', 'strength': 55, 'lambda': ''},
-        {'stage': '2-7', 'strength': 60, 'lambda': ''},
-        {'stage': '3-1', 'strength': 65, 'lambda': ''},
-        {'stage': '3-2', 'strength': 70, 'lambda': ''},
-        {'stage': '3-3', 'strength': 75, 'lambda': ''},
-        {'stage': '3-5', 'strength': 80, 'lambda': ''},
-        {'stage': '3-6', 'strength': 85, 'lambda': ''},
-        {'stage': '3-7', 'strength': 90, 'lambda': ''},
-        {'stage': '4-1', 'strength': 95, 'lambda': ''},
-        {'stage': '4-2', 'strength': 100, 'lambda': ''},
-        {'stage': '4-3', 'strength': 105, 'lambda': ''},
-        {'stage': '4-5', 'strength': 110, 'lambda': ''},
-        {'stage': '4-6', 'strength': 115, 'lambda': ''},
-        {'stage': '4-7', 'strength': 120, 'lambda': ''},
-        {'stage': '5-1', 'strength': 125, 'lambda': ''},
-        {'stage': '5-2', 'strength': 130, 'lambda': ''},
-        {'stage': '5-3', 'strength': 135, 'lambda': ''},
-        {'stage': '5-5', 'strength': 140, 'lambda': ''},
-        {'stage': '5-6', 'strength': 145, 'lambda': ''},
-        {'stage': '5-7', 'strength': 150, 'lambda': ''},
-        {'stage': '6-1', 'strength': 155, 'lambda': ''},
-        {'stage': '6-2', 'strength': 160, 'lambda': ''},
-        {'stage': '6-3', 'strength': 165, 'lambda': ''},
-        {'stage': '6-5', 'strength': 170, 'lambda': ''},
-        {'stage': '6-6', 'strength': 175, 'lambda': ''},
-        {'stage': '6-7', 'strength': 180, 'lambda': ''},
-        {'stage': '7-1', 'strength': 185, 'lambda': ''},
-        {'stage': '7-2', 'strength': 190, 'lambda': ''},
-        {'stage': '7-3', 'strength': 195, 'lambda': ''},
-        {'stage': '7-5', 'strength': 200, 'lambda': ''},
-        {'stage': '7-6', 'strength': 205, 'lambda': ''}
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
     ],
     "Player 3": [
-        {'stage': '2-1', 'strength': 35, 'lambda': ''},
-        {'stage': '2-2', 'strength': 40, 'lambda': ''},
-        {'stage': '2-3', 'strength': 45, 'lambda': ''},
-        {'stage': '2-5', 'strength': 50, 'lambda': ''},
-        {'stage': '2-6', 'strength': 55, 'lambda': ''},
-        {'stage': '2-7', 'strength': 60, 'lambda': ''},
-        {'stage': '3-1', 'strength': 65, 'lambda': ''},
-        {'stage': '3-2', 'strength': 70, 'lambda': ''},
-        {'stage': '3-3', 'strength': 75, 'lambda': ''},
-        {'stage': '3-5', 'strength': 80, 'lambda': ''},
-        {'stage': '3-6', 'strength': 85, 'lambda': ''},
-        {'stage': '3-7', 'strength': 90, 'lambda': ''},
-        {'stage': '4-1', 'strength': 95, 'lambda': ''},
-        {'stage': '4-2', 'strength': 100, 'lambda': ''},
-        {'stage': '4-3', 'strength': 105, 'lambda': ''},
-        {'stage': '4-5', 'strength': 110, 'lambda': ''},
-        {'stage': '4-6', 'strength': 115, 'lambda': ''},
-        {'stage': '4-7', 'strength': 120, 'lambda': ''},
-        {'stage': '5-1', 'strength': 125, 'lambda': ''},
-        {'stage': '5-2', 'strength': 130, 'lambda': ''},
-        {'stage': '5-3', 'strength': 135, 'lambda': ''},
-        {'stage': '5-5', 'strength': 140, 'lambda': ''},
-        {'stage': '5-6', 'strength': 145, 'lambda': ''},
-        {'stage': '5-7', 'strength': 150, 'lambda': ''},
-        {'stage': '6-1', 'strength': 155, 'lambda': ''},
-        {'stage': '6-2', 'strength': 160, 'lambda': ''},
-        {'stage': '6-3', 'strength': 165, 'lambda': ''},
-        {'stage': '6-5', 'strength': 170, 'lambda': ''},
-        {'stage': '6-6', 'strength': 175, 'lambda': ''},
-        {'stage': '6-7', 'strength': 180, 'lambda': ''},
-        {'stage': '7-1', 'strength': 185, 'lambda': ''},
-        {'stage': '7-2', 'strength': 190, 'lambda': ''},
-        {'stage': '7-3', 'strength': 195, 'lambda': ''},
-        {'stage': '7-5', 'strength': 200, 'lambda': ''},
-        {'stage': '7-6', 'strength': 205, 'lambda': ''}
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
     ],
     "Player 4": [
-        {'stage': '2-1', 'strength': 35, 'lambda': ''},
-        {'stage': '2-2', 'strength': 40, 'lambda': ''},
-        {'stage': '2-3', 'strength': 45, 'lambda': ''},
-        {'stage': '2-5', 'strength': 50, 'lambda': ''},
-        {'stage': '2-6', 'strength': 55, 'lambda': ''},
-        {'stage': '2-7', 'strength': 60, 'lambda': ''},
-        {'stage': '3-1', 'strength': 65, 'lambda': ''},
-        {'stage': '3-2', 'strength': 70, 'lambda': ''},
-        {'stage': '3-3', 'strength': 75, 'lambda': ''},
-        {'stage': '3-5', 'strength': 80, 'lambda': ''},
-        {'stage': '3-6', 'strength': 85, 'lambda': ''},
-        {'stage': '3-7', 'strength': 90, 'lambda': ''},
-        {'stage': '4-1', 'strength': 95, 'lambda': ''},
-        {'stage': '4-2', 'strength': 100, 'lambda': ''},
-        {'stage': '4-3', 'strength': 105, 'lambda': ''},
-        {'stage': '4-5', 'strength': 110, 'lambda': ''},
-        {'stage': '4-6', 'strength': 115, 'lambda': ''},
-        {'stage': '4-7', 'strength': 120, 'lambda': ''},
-        {'stage': '5-1', 'strength': 125, 'lambda': ''},
-        {'stage': '5-2', 'strength': 130, 'lambda': ''},
-        {'stage': '5-3', 'strength': 135, 'lambda': ''},
-        {'stage': '5-5', 'strength': 140, 'lambda': ''},
-        {'stage': '5-6', 'strength': 145, 'lambda': ''},
-        {'stage': '5-7', 'strength': 150, 'lambda': ''},
-        {'stage': '6-1', 'strength': 155, 'lambda': ''},
-        {'stage': '6-2', 'strength': 160, 'lambda': ''},
-        {'stage': '6-3', 'strength': 165, 'lambda': ''},
-        {'stage': '6-5', 'strength': 170, 'lambda': ''},
-        {'stage': '6-6', 'strength': 175, 'lambda': ''},
-        {'stage': '6-7', 'strength': 180, 'lambda': ''},
-        {'stage': '7-1', 'strength': 185, 'lambda': ''},
-        {'stage': '7-2', 'strength': 190, 'lambda': ''},
-        {'stage': '7-3', 'strength': 195, 'lambda': ''},
-        {'stage': '7-5', 'strength': 200, 'lambda': ''},
-        {'stage': '7-6', 'strength': 205, 'lambda': ''}
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
     ],
     "Player 5": [
-        {'stage': '2-1', 'strength': 35, 'lambda': ''},
-        {'stage': '2-2', 'strength': 40, 'lambda': ''},
-        {'stage': '2-3', 'strength': 45, 'lambda': ''},
-        {'stage': '2-5', 'strength': 50, 'lambda': ''},
-        {'stage': '2-6', 'strength': 55, 'lambda': ''},
-        {'stage': '2-7', 'strength': 60, 'lambda': ''},
-        {'stage': '3-1', 'strength': 65, 'lambda': ''},
-        {'stage': '3-2', 'strength': 70, 'lambda': ''},
-        {'stage': '3-3', 'strength': 75, 'lambda': ''},
-        {'stage': '3-5', 'strength': 80, 'lambda': ''},
-        {'stage': '3-6', 'strength': 85, 'lambda': ''},
-        {'stage': '3-7', 'strength': 90, 'lambda': ''},
-        {'stage': '4-1', 'strength': 95, 'lambda': ''},
-        {'stage': '4-2', 'strength': 100, 'lambda': ''},
-        {'stage': '4-3', 'strength': 105, 'lambda': ''},
-        {'stage': '4-5', 'strength': 110, 'lambda': ''},
-        {'stage': '4-6', 'strength': 115, 'lambda': ''},
-        {'stage': '4-7', 'strength': 120, 'lambda': ''},
-        {'stage': '5-1', 'strength': 125, 'lambda': ''},
-        {'stage': '5-2', 'strength': 130, 'lambda': ''},
-        {'stage': '5-3', 'strength': 135, 'lambda': ''},
-        {'stage': '5-5', 'strength': 140, 'lambda': ''},
-        {'stage': '5-6', 'strength': 145, 'lambda': ''},
-        {'stage': '5-7', 'strength': 150, 'lambda': ''},
-        {'stage': '6-1', 'strength': 155, 'lambda': ''},
-        {'stage': '6-2', 'strength': 160, 'lambda': ''},
-        {'stage': '6-3', 'strength': 165, 'lambda': ''},
-        {'stage': '6-5', 'strength': 170, 'lambda': ''},
-        {'stage': '6-6', 'strength': 175, 'lambda': ''},
-        {'stage': '6-7', 'strength': 180, 'lambda': ''},
-        {'stage': '7-1', 'strength': 185, 'lambda': ''},
-        {'stage': '7-2', 'strength': 190, 'lambda': ''},
-        {'stage': '7-3', 'strength': 195, 'lambda': ''},
-        {'stage': '7-5', 'strength': 200, 'lambda': ''},
-        {'stage': '7-6', 'strength': 205, 'lambda': ''}
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
     ],
     "Player 6": [
-        {'stage': '2-1', 'strength': 35, 'lambda': ''},
-        {'stage': '2-2', 'strength': 40, 'lambda': ''},
-        {'stage': '2-3', 'strength': 45, 'lambda': ''},
-        {'stage': '2-5', 'strength': 50, 'lambda': ''},
-        {'stage': '2-6', 'strength': 55, 'lambda': ''},
-        {'stage': '2-7', 'strength': 60, 'lambda': ''},
-        {'stage': '3-1', 'strength': 65, 'lambda': ''},
-        {'stage': '3-2', 'strength': 70, 'lambda': ''},
-        {'stage': '3-3', 'strength': 75, 'lambda': ''},
-        {'stage': '3-5', 'strength': 80, 'lambda': ''},
-        {'stage': '3-6', 'strength': 85, 'lambda': ''},
-        {'stage': '3-7', 'strength': 90, 'lambda': ''},
-        {'stage': '4-1', 'strength': 95, 'lambda': ''},
-        {'stage': '4-2', 'strength': 100, 'lambda': ''},
-        {'stage': '4-3', 'strength': 105, 'lambda': ''},
-        {'stage': '4-5', 'strength': 110, 'lambda': ''},
-        {'stage': '4-6', 'strength': 115, 'lambda': ''},
-        {'stage': '4-7', 'strength': 120, 'lambda': ''},
-        {'stage': '5-1', 'strength': 125, 'lambda': ''},
-        {'stage': '5-2', 'strength': 130, 'lambda': ''},
-        {'stage': '5-3', 'strength': 135, 'lambda': ''},
-        {'stage': '5-5', 'strength': 140, 'lambda': ''},
-        {'stage': '5-6', 'strength': 145, 'lambda': ''},
-        {'stage': '5-7', 'strength': 150, 'lambda': ''},
-        {'stage': '6-1', 'strength': 155, 'lambda': ''},
-        {'stage': '6-2', 'strength': 160, 'lambda': ''},
-        {'stage': '6-3', 'strength': 165, 'lambda': ''},
-        {'stage': '6-5', 'strength': 170, 'lambda': ''},
-        {'stage': '6-6', 'strength': 175, 'lambda': ''},
-        {'stage': '6-7', 'strength': 180, 'lambda': ''},
-        {'stage': '7-1', 'strength': 185, 'lambda': ''},
-        {'stage': '7-2', 'strength': 190, 'lambda': ''},
-        {'stage': '7-3', 'strength': 195, 'lambda': ''},
-        {'stage': '7-5', 'strength': 200, 'lambda': ''},
-        {'stage': '7-6', 'strength': 205, 'lambda': ''}
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
     ],
     "Player 7": [
-        {'stage': '2-1', 'strength': 35, 'lambda': ''},
-        {'stage': '2-2', 'strength': 40, 'lambda': ''},
-        {'stage': '2-3', 'strength': 45, 'lambda': ''},
-        {'stage': '2-5', 'strength': 50, 'lambda': ''},
-        {'stage': '2-6', 'strength': 55, 'lambda': ''},
-        {'stage': '2-7', 'strength': 60, 'lambda': ''},
-        {'stage': '3-1', 'strength': 65, 'lambda': ''},
-        {'stage': '3-2', 'strength': 70, 'lambda': ''},
-        {'stage': '3-3', 'strength': 75, 'lambda': ''},
-        {'stage': '3-5', 'strength': 80, 'lambda': ''},
-        {'stage': '3-6', 'strength': 85, 'lambda': ''},
-        {'stage': '3-7', 'strength': 90, 'lambda': ''},
-        {'stage': '4-1', 'strength': 95, 'lambda': ''},
-        {'stage': '4-2', 'strength': 100, 'lambda': ''},
-        {'stage': '4-3', 'strength': 105, 'lambda': ''},
-        {'stage': '4-5', 'strength': 110, 'lambda': ''},
-        {'stage': '4-6', 'strength': 115, 'lambda': ''},
-        {'stage': '4-7', 'strength': 120, 'lambda': ''},
-        {'stage': '5-1', 'strength': 125, 'lambda': ''},
-        {'stage': '5-2', 'strength': 130, 'lambda': ''},
-        {'stage': '5-3', 'strength': 135, 'lambda': ''},
-        {'stage': '5-5', 'strength': 140, 'lambda': ''},
-        {'stage': '5-6', 'strength': 145, 'lambda': ''},
-        {'stage': '5-7', 'strength': 150, 'lambda': ''},
-        {'stage': '6-1', 'strength': 155, 'lambda': ''},
-        {'stage': '6-2', 'strength': 160, 'lambda': ''},
-        {'stage': '6-3', 'strength': 165, 'lambda': ''},
-        {'stage': '6-5', 'strength': 170, 'lambda': ''},
-        {'stage': '6-6', 'strength': 175, 'lambda': ''},
-        {'stage': '6-7', 'strength': 180, 'lambda': ''},
-        {'stage': '7-1', 'strength': 185, 'lambda': ''},
-        {'stage': '7-2', 'strength': 190, 'lambda': ''},
-        {'stage': '7-3', 'strength': 195, 'lambda': ''},
-        {'stage': '7-5', 'strength': 200, 'lambda': ''},
-        {'stage': '7-6', 'strength': 205, 'lambda': ''}
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
     ],
     "Player 8": [
-        {'stage': '2-1', 'strength': 35, 'lambda': ''},
-        {'stage': '2-2', 'strength': 40, 'lambda': ''},
-        {'stage': '2-3', 'strength': 45, 'lambda': ''},
-        {'stage': '2-5', 'strength': 50, 'lambda': ''},
-        {'stage': '2-6', 'strength': 55, 'lambda': ''},
-        {'stage': '2-7', 'strength': 60, 'lambda': ''},
-        {'stage': '3-1', 'strength': 65, 'lambda': ''},
-        {'stage': '3-2', 'strength': 70, 'lambda': ''},
-        {'stage': '3-3', 'strength': 75, 'lambda': ''},
-        {'stage': '3-5', 'strength': 80, 'lambda': ''},
-        {'stage': '3-6', 'strength': 85, 'lambda': ''},
-        {'stage': '3-7', 'strength': 90, 'lambda': ''},
-        {'stage': '4-1', 'strength': 95, 'lambda': ''},
-        {'stage': '4-2', 'strength': 100, 'lambda': ''},
-        {'stage': '4-3', 'strength': 105, 'lambda': ''},
-        {'stage': '4-5', 'strength': 110, 'lambda': ''},
-        {'stage': '4-6', 'strength': 115, 'lambda': ''},
-        {'stage': '4-7', 'strength': 120, 'lambda': ''},
-        {'stage': '5-1', 'strength': 125, 'lambda': ''},
-        {'stage': '5-2', 'strength': 130, 'lambda': ''},
-        {'stage': '5-3', 'strength': 135, 'lambda': ''},
-        {'stage': '5-5', 'strength': 140, 'lambda': ''},
-        {'stage': '5-6', 'strength': 145, 'lambda': ''},
-        {'stage': '5-7', 'strength': 150, 'lambda': ''},
-        {'stage': '6-1', 'strength': 155, 'lambda': ''},
-        {'stage': '6-2', 'strength': 160, 'lambda': ''},
-        {'stage': '6-3', 'strength': 165, 'lambda': ''},
-        {'stage': '6-5', 'strength': 170, 'lambda': ''},
-        {'stage': '6-6', 'strength': 175, 'lambda': ''},
-        {'stage': '6-7', 'strength': 180, 'lambda': ''},
-        {'stage': '7-1', 'strength': 185, 'lambda': ''},
-        {'stage': '7-2', 'strength': 190, 'lambda': ''},
-        {'stage': '7-3', 'strength': 195, 'lambda': ''},
-        {'stage': '7-5', 'strength': 200, 'lambda': ''},
-        {'stage': '7-6', 'strength': 205, 'lambda': ''}
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
     ],
     "Standard fast 8": [
-        {'stage': '2-1', 'strength': 35, 'lambda': ''},
-        {'stage': '2-2', 'strength': 40, 'lambda': ''},
-        {'stage': '2-3', 'strength': 45, 'lambda': ''},
-        {'stage': '2-5', 'strength': 50, 'lambda': ''},
-        {'stage': '2-6', 'strength': 55, 'lambda': ''},
-        {'stage': '2-7', 'strength': 60, 'lambda': ''},
-        {'stage': '3-1', 'strength': 65, 'lambda': ''},
-        {'stage': '3-2', 'strength': 70, 'lambda': ''},
-        {'stage': '3-3', 'strength': 75, 'lambda': ''},
-        {'stage': '3-5', 'strength': 80, 'lambda': ''},
-        {'stage': '3-6', 'strength': 85, 'lambda': ''},
-        {'stage': '3-7', 'strength': 90, 'lambda': ''},
-        {'stage': '4-1', 'strength': 95, 'lambda': ''},
-        {'stage': '4-2', 'strength': 100, 'lambda': ''},
-        {'stage': '4-3', 'strength': 105, 'lambda': ''},
-        {'stage': '4-5', 'strength': 110, 'lambda': ''},
-        {'stage': '4-6', 'strength': 115, 'lambda': ''},
-        {'stage': '4-7', 'strength': 120, 'lambda': ''},
-        {'stage': '5-1', 'strength': 125, 'lambda': ''},
-        {'stage': '5-2', 'strength': 130, 'lambda': ''},
-        {'stage': '5-3', 'strength': 135, 'lambda': ''},
-        {'stage': '5-5', 'strength': 140, 'lambda': ''},
-        {'stage': '5-6', 'strength': 145, 'lambda': ''},
-        {'stage': '5-7', 'strength': 150, 'lambda': ''},
-        {'stage': '6-1', 'strength': 155, 'lambda': ''},
-        {'stage': '6-2', 'strength': 160, 'lambda': ''},
-        {'stage': '6-3', 'strength': 165, 'lambda': ''},
-        {'stage': '6-5', 'strength': 170, 'lambda': ''},
-        {'stage': '6-6', 'strength': 175, 'lambda': ''},
-        {'stage': '6-7', 'strength': 180, 'lambda': ''},
-        {'stage': '7-1', 'strength': 185, 'lambda': ''},
-        {'stage': '7-2', 'strength': 190, 'lambda': ''},
-        {'stage': '7-3', 'strength': 195, 'lambda': ''},
-        {'stage': '7-5', 'strength': 200, 'lambda': ''},
-        {'stage': '7-6', 'strength': 205, 'lambda': ''}
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
     ],
     "Standard fast 9": [
-        {'stage': '2-1', 'strength': 35, 'lambda': ''},
-        {'stage': '2-2', 'strength': 40, 'lambda': ''},
-        {'stage': '2-3', 'strength': 45, 'lambda': ''},
-        {'stage': '2-5', 'strength': 50, 'lambda': ''},
-        {'stage': '2-6', 'strength': 55, 'lambda': ''},
-        {'stage': '2-7', 'strength': 60, 'lambda': ''},
-        {'stage': '3-1', 'strength': 65, 'lambda': ''},
-        {'stage': '3-2', 'strength': 70, 'lambda': ''},
-        {'stage': '3-3', 'strength': 75, 'lambda': ''},
-        {'stage': '3-5', 'strength': 80, 'lambda': ''},
-        {'stage': '3-6', 'strength': 85, 'lambda': ''},
-        {'stage': '3-7', 'strength': 90, 'lambda': ''},
-        {'stage': '4-1', 'strength': 95, 'lambda': ''},
-        {'stage': '4-2', 'strength': 100, 'lambda': ''},
-        {'stage': '4-3', 'strength': 105, 'lambda': ''},
-        {'stage': '4-5', 'strength': 110, 'lambda': ''},
-        {'stage': '4-6', 'strength': 115, 'lambda': ''},
-        {'stage': '4-7', 'strength': 120, 'lambda': ''},
-        {'stage': '5-1', 'strength': 125, 'lambda': ''},
-        {'stage': '5-2', 'strength': 130, 'lambda': ''},
-        {'stage': '5-3', 'strength': 135, 'lambda': ''},
-        {'stage': '5-5', 'strength': 140, 'lambda': ''},
-        {'stage': '5-6', 'strength': 145, 'lambda': ''},
-        {'stage': '5-7', 'strength': 150, 'lambda': ''},
-        {'stage': '6-1', 'strength': 155, 'lambda': ''},
-        {'stage': '6-2', 'strength': 160, 'lambda': ''},
-        {'stage': '6-3', 'strength': 165, 'lambda': ''},
-        {'stage': '6-5', 'strength': 170, 'lambda': ''},
-        {'stage': '6-6', 'strength': 175, 'lambda': ''},
-        {'stage': '6-7', 'strength': 180, 'lambda': ''},
-        {'stage': '7-1', 'strength': 185, 'lambda': ''},
-        {'stage': '7-2', 'strength': 190, 'lambda': ''},
-        {'stage': '7-3', 'strength': 195, 'lambda': ''},
-        {'stage': '7-5', 'strength': 200, 'lambda': ''},
-        {'stage': '7-6', 'strength': 205, 'lambda': ''}
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
     ],
     "$1 RR": [
-        {'stage': '2-1', 'strength': 35, 'lambda': ''},
-        {'stage': '2-2', 'strength': 40, 'lambda': ''},
-        {'stage': '2-3', 'strength': 45, 'lambda': ''},
-        {'stage': '2-5', 'strength': 50, 'lambda': ''},
-        {'stage': '2-6', 'strength': 55, 'lambda': ''},
-        {'stage': '2-7', 'strength': 60, 'lambda': ''},
-        {'stage': '3-1', 'strength': 65, 'lambda': ''},
-        {'stage': '3-2', 'strength': 70, 'lambda': ''},
-        {'stage': '3-3', 'strength': 75, 'lambda': ''},
-        {'stage': '3-5', 'strength': 80, 'lambda': ''},
-        {'stage': '3-6', 'strength': 85, 'lambda': ''},
-        {'stage': '3-7', 'strength': 90, 'lambda': ''},
-        {'stage': '4-1', 'strength': 95, 'lambda': ''},
-        {'stage': '4-2', 'strength': 100, 'lambda': ''},
-        {'stage': '4-3', 'strength': 105, 'lambda': ''},
-        {'stage': '4-5', 'strength': 110, 'lambda': ''},
-        {'stage': '4-6', 'strength': 115, 'lambda': ''},
-        {'stage': '4-7', 'strength': 120, 'lambda': ''},
-        {'stage': '5-1', 'strength': 125, 'lambda': ''},
-        {'stage': '5-2', 'strength': 130, 'lambda': ''},
-        {'stage': '5-3', 'strength': 135, 'lambda': ''},
-        {'stage': '5-5', 'strength': 140, 'lambda': ''},
-        {'stage': '5-6', 'strength': 145, 'lambda': ''},
-        {'stage': '5-7', 'strength': 150, 'lambda': ''},
-        {'stage': '6-1', 'strength': 155, 'lambda': ''},
-        {'stage': '6-2', 'strength': 160, 'lambda': ''},
-        {'stage': '6-3', 'strength': 165, 'lambda': ''},
-        {'stage': '6-5', 'strength': 170, 'lambda': ''},
-        {'stage': '6-6', 'strength': 175, 'lambda': ''},
-        {'stage': '6-7', 'strength': 180, 'lambda': ''},
-        {'stage': '7-1', 'strength': 185, 'lambda': ''},
-        {'stage': '7-2', 'strength': 190, 'lambda': ''},
-        {'stage': '7-3', 'strength': 195, 'lambda': ''},
-        {'stage': '7-5', 'strength': 200, 'lambda': ''},
-        {'stage': '7-6', 'strength': 205, 'lambda': ''}
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
     ],
     "$2 RR": [
-        {'stage': '2-1', 'strength': 35, 'lambda': ''},
-        {'stage': '2-2', 'strength': 40, 'lambda': ''},
-        {'stage': '2-3', 'strength': 45, 'lambda': ''},
-        {'stage': '2-5', 'strength': 50, 'lambda': ''},
-        {'stage': '2-6', 'strength': 55, 'lambda': ''},
-        {'stage': '2-7', 'strength': 60, 'lambda': ''},
-        {'stage': '3-1', 'strength': 65, 'lambda': ''},
-        {'stage': '3-2', 'strength': 70, 'lambda': ''},
-        {'stage': '3-3', 'strength': 75, 'lambda': ''},
-        {'stage': '3-5', 'strength': 80, 'lambda': ''},
-        {'stage': '3-6', 'strength': 85, 'lambda': ''},
-        {'stage': '3-7', 'strength': 90, 'lambda': ''},
-        {'stage': '4-1', 'strength': 95, 'lambda': ''},
-        {'stage': '4-2', 'strength': 100, 'lambda': ''},
-        {'stage': '4-3', 'strength': 105, 'lambda': ''},
-        {'stage': '4-5', 'strength': 110, 'lambda': ''},
-        {'stage': '4-6', 'strength': 115, 'lambda': ''},
-        {'stage': '4-7', 'strength': 120, 'lambda': ''},
-        {'stage': '5-1', 'strength': 125, 'lambda': ''},
-        {'stage': '5-2', 'strength': 130, 'lambda': ''},
-        {'stage': '5-3', 'strength': 135, 'lambda': ''},
-        {'stage': '5-5', 'strength': 140, 'lambda': ''},
-        {'stage': '5-6', 'strength': 145, 'lambda': ''},
-        {'stage': '5-7', 'strength': 150, 'lambda': ''},
-        {'stage': '6-1', 'strength': 155, 'lambda': ''},
-        {'stage': '6-2', 'strength': 160, 'lambda': ''},
-        {'stage': '6-3', 'strength': 165, 'lambda': ''},
-        {'stage': '6-5', 'strength': 170, 'lambda': ''},
-        {'stage': '6-6', 'strength': 175, 'lambda': ''},
-        {'stage': '6-7', 'strength': 180, 'lambda': ''},
-        {'stage': '7-1', 'strength': 185, 'lambda': ''},
-        {'stage': '7-2', 'strength': 190, 'lambda': ''},
-        {'stage': '7-3', 'strength': 195, 'lambda': ''},
-        {'stage': '7-5', 'strength': 200, 'lambda': ''},
-        {'stage': '7-6', 'strength': 205, 'lambda': ''}
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
     ],
     "$3 RR": [
-        {'stage': '2-1', 'strength': 35, 'lambda': ''},
-        {'stage': '2-2', 'strength': 40, 'lambda': ''},
-        {'stage': '2-3', 'strength': 45, 'lambda': ''},
-        {'stage': '2-5', 'strength': 50, 'lambda': ''},
-        {'stage': '2-6', 'strength': 55, 'lambda': ''},
-        {'stage': '2-7', 'strength': 60, 'lambda': ''},
-        {'stage': '3-1', 'strength': 65, 'lambda': ''},
-        {'stage': '3-2', 'strength': 70, 'lambda': ''},
-        {'stage': '3-3', 'strength': 75, 'lambda': ''},
-        {'stage': '3-5', 'strength': 80, 'lambda': ''},
-        {'stage': '3-6', 'strength': 85, 'lambda': ''},
-        {'stage': '3-7', 'strength': 90, 'lambda': ''},
-        {'stage': '4-1', 'strength': 95, 'lambda': ''},
-        {'stage': '4-2', 'strength': 100, 'lambda': ''},
-        {'stage': '4-3', 'strength': 105, 'lambda': ''},
-        {'stage': '4-5', 'strength': 110, 'lambda': ''},
-        {'stage': '4-6', 'strength': 115, 'lambda': ''},
-        {'stage': '4-7', 'strength': 120, 'lambda': ''},
-        {'stage': '5-1', 'strength': 125, 'lambda': ''},
-        {'stage': '5-2', 'strength': 130, 'lambda': ''},
-        {'stage': '5-3', 'strength': 135, 'lambda': ''},
-        {'stage': '5-5', 'strength': 140, 'lambda': ''},
-        {'stage': '5-6', 'strength': 145, 'lambda': ''},
-        {'stage': '5-7', 'strength': 150, 'lambda': ''},
-        {'stage': '6-1', 'strength': 155, 'lambda': ''},
-        {'stage': '6-2', 'strength': 160, 'lambda': ''},
-        {'stage': '6-3', 'strength': 165, 'lambda': ''},
-        {'stage': '6-5', 'strength': 170, 'lambda': ''},
-        {'stage': '6-6', 'strength': 175, 'lambda': ''},
-        {'stage': '6-7', 'strength': 180, 'lambda': ''},
-        {'stage': '7-1', 'strength': 185, 'lambda': ''},
-        {'stage': '7-2', 'strength': 190, 'lambda': ''},
-        {'stage': '7-3', 'strength': 195, 'lambda': ''},
-        {'stage': '7-5', 'strength': 200, 'lambda': ''},
-        {'stage': '7-6', 'strength': 205, 'lambda': ''}
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
     ],
     "Tempo": [
-        {'stage': '2-1', 'strength': 35, 'lambda': ''},
-        {'stage': '2-2', 'strength': 40, 'lambda': ''},
-        {'stage': '2-3', 'strength': 45, 'lambda': ''},
-        {'stage': '2-5', 'strength': 50, 'lambda': ''},
-        {'stage': '2-6', 'strength': 55, 'lambda': ''},
-        {'stage': '2-7', 'strength': 60, 'lambda': ''},
-        {'stage': '3-1', 'strength': 65, 'lambda': ''},
-        {'stage': '3-2', 'strength': 70, 'lambda': ''},
-        {'stage': '3-3', 'strength': 75, 'lambda': ''},
-        {'stage': '3-5', 'strength': 80, 'lambda': ''},
-        {'stage': '3-6', 'strength': 85, 'lambda': ''},
-        {'stage': '3-7', 'strength': 90, 'lambda': ''},
-        {'stage': '4-1', 'strength': 95, 'lambda': ''},
-        {'stage': '4-2', 'strength': 100, 'lambda': ''},
-        {'stage': '4-3', 'strength': 105, 'lambda': ''},
-        {'stage': '4-5', 'strength': 110, 'lambda': ''},
-        {'stage': '4-6', 'strength': 115, 'lambda': ''},
-        {'stage': '4-7', 'strength': 120, 'lambda': ''},
-        {'stage': '5-1', 'strength': 125, 'lambda': ''},
-        {'stage': '5-2', 'strength': 130, 'lambda': ''},
-        {'stage': '5-3', 'strength': 135, 'lambda': ''},
-        {'stage': '5-5', 'strength': 140, 'lambda': ''},
-        {'stage': '5-6', 'strength': 145, 'lambda': ''},
-        {'stage': '5-7', 'strength': 150, 'lambda': ''},
-        {'stage': '6-1', 'strength': 155, 'lambda': ''},
-        {'stage': '6-2', 'strength': 160, 'lambda': ''},
-        {'stage': '6-3', 'strength': 165, 'lambda': ''},
-        {'stage': '6-5', 'strength': 170, 'lambda': ''},
-        {'stage': '6-6', 'strength': 175, 'lambda': ''},
-        {'stage': '6-7', 'strength': 180, 'lambda': ''},
-        {'stage': '7-1', 'strength': 185, 'lambda': ''},
-        {'stage': '7-2', 'strength': 190, 'lambda': ''},
-        {'stage': '7-3', 'strength': 195, 'lambda': ''},
-        {'stage': '7-5', 'strength': 200, 'lambda': ''},
-        {'stage': '7-6', 'strength': 205, 'lambda': ''}
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
     ],
     "Loss streak": [
-        {'stage': '2-1', 'strength': 35, 'lambda': ''},
-        {'stage': '2-2', 'strength': 40, 'lambda': ''},
-        {'stage': '2-3', 'strength': 45, 'lambda': ''},
-        {'stage': '2-5', 'strength': 50, 'lambda': ''},
-        {'stage': '2-6', 'strength': 55, 'lambda': ''},
-        {'stage': '2-7', 'strength': 60, 'lambda': ''},
-        {'stage': '3-1', 'strength': 65, 'lambda': ''},
-        {'stage': '3-2', 'strength': 70, 'lambda': ''},
-        {'stage': '3-3', 'strength': 75, 'lambda': ''},
-        {'stage': '3-5', 'strength': 80, 'lambda': ''},
-        {'stage': '3-6', 'strength': 85, 'lambda': ''},
-        {'stage': '3-7', 'strength': 90, 'lambda': ''},
-        {'stage': '4-1', 'strength': 95, 'lambda': ''},
-        {'stage': '4-2', 'strength': 100, 'lambda': ''},
-        {'stage': '4-3', 'strength': 105, 'lambda': ''},
-        {'stage': '4-5', 'strength': 110, 'lambda': ''},
-        {'stage': '4-6', 'strength': 115, 'lambda': ''},
-        {'stage': '4-7', 'strength': 120, 'lambda': ''},
-        {'stage': '5-1', 'strength': 125, 'lambda': ''},
-        {'stage': '5-2', 'strength': 130, 'lambda': ''},
-        {'stage': '5-3', 'strength': 135, 'lambda': ''},
-        {'stage': '5-5', 'strength': 140, 'lambda': ''},
-        {'stage': '5-6', 'strength': 145, 'lambda': ''},
-        {'stage': '5-7', 'strength': 150, 'lambda': ''},
-        {'stage': '6-1', 'strength': 155, 'lambda': ''},
-        {'stage': '6-2', 'strength': 160, 'lambda': ''},
-        {'stage': '6-3', 'strength': 165, 'lambda': ''},
-        {'stage': '6-5', 'strength': 170, 'lambda': ''},
-        {'stage': '6-6', 'strength': 175, 'lambda': ''},
-        {'stage': '6-7', 'strength': 180, 'lambda': ''},
-        {'stage': '7-1', 'strength': 185, 'lambda': ''},
-        {'stage': '7-2', 'strength': 190, 'lambda': ''},
-        {'stage': '7-3', 'strength': 195, 'lambda': ''},
-        {'stage': '7-5', 'strength': 200, 'lambda': ''},
-        {'stage': '7-6', 'strength': 205, 'lambda': ''}
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
+    ],
+    "Other": [
+        {'stage': '2-1', 'strength': 16.2, 'lambda': ''},
+        {'stage': '2-2', 'strength': 16.0, 'lambda': ''},
+        {'stage': '2-3', 'strength': 19.3, 'lambda': ''},
+        {'stage': '2-5', 'strength': 26.3, 'lambda': ''},
+        {'stage': '2-6', 'strength': 34.8, 'lambda': ''},
+        {'stage': '2-7', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-1', 'strength': 35.7, 'lambda': ''},
+        {'stage': '3-2', 'strength': 44.5, 'lambda': ''},
+        {'stage': '3-3', 'strength': 50.3, 'lambda': ''},
+        {'stage': '3-5', 'strength': 59.3, 'lambda': ''},
+        {'stage': '3-6', 'strength': 62.4, 'lambda': ''},
+        {'stage': '3-7', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-1', 'strength': 63.1, 'lambda': ''},
+        {'stage': '4-2', 'strength': 70.2, 'lambda': ''},
+        {'stage': '4-3', 'strength': 78.3, 'lambda': ''},
+        {'stage': '4-5', 'strength': 80.7, 'lambda': ''},
+        {'stage': '4-6', 'strength': 83.5, 'lambda': ''},
+        {'stage': '4-7', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-1', 'strength': 84.2, 'lambda': ''},
+        {'stage': '5-2', 'strength': 89.6, 'lambda': ''},
+        {'stage': '5-3', 'strength': 93.4, 'lambda': ''},
+        {'stage': '5-5', 'strength': 95.1, 'lambda': ''},
+        {'stage': '5-6', 'strength': 95.7, 'lambda': ''},
+        {'stage': '5-7', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-1', 'strength': 95.7, 'lambda': ''},
+        {'stage': '6-2', 'strength': 96.5, 'lambda': ''},
+        {'stage': '6-3', 'strength': 99.8, 'lambda': ''},
+        {'stage': '6-5', 'strength': 100.0, 'lambda': ''},
+        {'stage': '6-6', 'strength': 101.0, 'lambda': ''},
+        {'stage': '6-7', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-1', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-2', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-3', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-5', 'strength': 101.0, 'lambda': ''},
+        {'stage': '7-6', 'strength': 101.0, 'lambda': ''}
     ]
 };
 
@@ -645,21 +683,72 @@ var playerProfilesSeries = {
 
 // tab handling
 function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  if (tabName === "Simulation Settings" || tabName === "Player Profiles") {
-    document.getElementById(tabName).style.display = "flex";
-  } else {
-    document.getElementById(tabName).style.display = "block";
-  }
-  evt.currentTarget.className += " active";
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // tab formatting
+    if (tabName === "Simulation Settings" || tabName === "Player Profiles") {
+        document.getElementById(tabName).style.display = "flex";
+    } else {
+        document.getElementById(tabName).style.display = "block";
+    }
+    evt.currentTarget.className += " active";
+    if (tabName === "Player Profiles") {
+        window.dispatchEvent(new Event('resize')); // need to manually trigger to visually work w/ chrome devtools?
+    }
+
+    // per-tab processing
+    if (tabName === "Simulation Settings") {
+        // fix dropdowns 
+        document.querySelector('#n_sims').value = numSims.toExponential().replace('+', '').toUpperCase();;
+        document.querySelector('#start_stage').value = startStage;
+
+        // fix tables
+        Array.from(document.querySelector('#start_HP').children[0].rows).forEach((row, index) => {
+            const playerData = startingHP.find(p => p.Player === (index));
+            if (playerData && playerData.HP !== undefined) {
+                row.cells[1].innerText = playerData.HP;
+            }
+        })
+        Array.from(document.querySelector('#max_level').children[0].rows).forEach((row, index) => {
+            const stageData = maxLevel.find(p => p.stage === (row.cells[0].innerText));
+            if (stageData && stageData.level !== undefined) {
+                row.cells[1].innerText = stageData.level;
+            }
+        })
+        Array.from(document.querySelector('#matchups_table').children[0].rows).forEach((row, index) => {
+            const matchupData = matchups.find(p => p.row === (row.cells[0].innerText));
+            if (matchupData !== undefined) {
+                row.cells[1].innerText = matchupData.Vanilla;
+                row.cells[2].innerText = matchupData.Rock;
+                row.cells[3].innerText = matchupData.Paper;
+                row.cells[4].innerText = matchupData.Scissors;
+            }
+        })
+        Array.from(document.querySelector('#stage_damage_table').children[0].rows).forEach((row, index) => {
+            const stageData = stageDamage.find(p => p.stage === (row.cells[0].innerText));
+            if (stageData && stageData.damage !== undefined) {
+                row.cells[1].innerText = stageData.damage;
+            }
+        })
+    } else if (tabName === "Player Profiles") {
+        // fix dropdowns
+        var profileName = document.querySelector('#prof_sel').value;
+        document.querySelector('#comp_type').value = playerProfilesMetadata[profileName]["comp_type"];
+        document.querySelector('#profile_src').value = playerProfilesMetadata[profileName]["defn"];
+
+        // fix tables and graphs
+        updateStrTable()
+        allProfilesGraphHandler("init");
+        vsLobbyGraphHandler("init");
+    }
 }
 
 function n_sims_dropdown_cb(event) {
@@ -680,6 +769,7 @@ function start_HP_cb(event) {
         if (isNaN(num) || num < 0) {
             alert("Please enter a valid number for HP (non-negative integers only)");
             event.target.innerText = "0"; // Reset or handle error
+            num = 0;
         }
 
         startingHP.find(p => p.Player === parseInt(rowLabel))["HP"] = num;
@@ -694,8 +784,9 @@ function max_level_cb(event) {
         // Strength
         const num = parseInt(newValue);
         if (isNaN(num) || num < 3 || num > 10) {
-            alert("Please enter a valid number for Level (positive integers only)");
+            alert("Please enter a valid number for Level ([3, 10] only)");
             event.target.innerText = "3"; // Reset or handle error
+            num = 3;
         }
 
         maxLevel.find(p => p.stage === rowLabel)["level"] = num;
@@ -714,6 +805,7 @@ function matchups_table_cb(event) {
         if (isNaN(num) || num < 0) {
             alert("Please enter a valid number for this matchup multiplier (non-negative floats only)");
             event.target.innerText = "1.0"; // Reset or handle error
+            num = 1.0;
         }
 
         matchups.find(p => p.row === rowLabel)[colName] = num;
@@ -730,6 +822,7 @@ function stage_damage_table_cb(event) {
         if (isNaN(num) || num < 0) {
             alert("Please enter a valid number for stage damage (non-negative integers only)");
             event.target.innerText = "0"; // Reset or handle error
+            num = 0;
         }
 
         stageDamage.find(p => p.stage === rowLabel)["damage"] = num;
@@ -737,7 +830,8 @@ function stage_damage_table_cb(event) {
 }
 
 // live handle profile data
-function updateStrTable(profileName) {
+function updateStrTable() {
+    const profileName = document.querySelector('#prof_sel').value;
     const data = playerProfilesSeries[profileName];
     const tbody = document.querySelector("#edit_str_table");
     tbody.innerHTML = ""; // Clear existing rows
@@ -760,17 +854,25 @@ function prof_sel_dropdown_cb(event) {
 
     comp_type_dropdown.value = playerProfilesMetadata[value]["comp_type"];
     profile_src_dropdown.value = playerProfilesMetadata[value]["defn"];
-    if (profile_src_dropdown.value != "User entry") {
+    if (profile_src_dropdown.value != "User entry") { // refresh if src changed
         playerProfilesSeries[value] = structuredClone(playerProfilesSeries[profile_src_dropdown.value]);
     }
-    updateStrTable(value);
+    updateStrTable();
+    vsLobbyGraphHandler("update");
+
+    if (!value.includes("Player ")) {
+        profile_src_dropdown.disabled = true; // presets are by definition User entry
+    } else {
+        profile_src_dropdown.disabled = false;
+    }
 }
 
 function comp_type_dropdown_cb(event) {
     const prof_sel_dropdown = document.querySelector('#prof_sel');
     const value = event.target.value;
 
-    playerProfilesMetadata[prof_sel_dropdown.value]["comp_type"] = value;  
+    playerProfilesMetadata[prof_sel_dropdown.value]["comp_type"] = value;
+    vsLobbyGraphHandler("update")
 }
 
 function profile_src_dropdown_cb(event) {
@@ -781,7 +883,9 @@ function profile_src_dropdown_cb(event) {
     playerProfilesMetadata[profileName]["defn"] = value;
     if (value != "User entry") {
         playerProfilesSeries[profileName] = structuredClone(playerProfilesSeries[value]);
-        updateStrTable(profileName);
+        updateStrTable();
+        allProfilesGraphHandler("update");
+        vsLobbyGraphHandler("update");
     }
 }
 
@@ -792,22 +896,218 @@ function str_table_cb(event){
         const colIndex = event.target.cellIndex;
         const prof_sel_dropdown = document.querySelector('#prof_sel');
         var profileName = prof_sel_dropdown.value;
+        var val_out;
 
         var headerName;
         if (colIndex === 1) {
             // Strength
-            const num = parseInt(innerText);
-            if (isNaN(num)) {
-                alert("Please enter a valid number for Strength (integers only)");
+            const num = parseFloat(newValue);
+            if (isNaN(num) || num < 0) {
+                alert("Please enter a valid number for Strength (non-negative floats only)");
                 event.target.innerText = "0"; // Reset or handle error
+                val_out = 0;
+            } else {
+                val_out = num;
             }
             headerName = "strength";
         } else {
+            val_out = newValue;
             headerName = "lambda";
         }
         
-        playerProfilesSeries[profileName].find(p => p.stage === rowLabel)[headerName] = innerText;
+        // write out values
+        playerProfilesSeries[profileName].find(p => p.stage === rowLabel)[headerName] = val_out;
+        allProfilesGraphHandler("update");
+        vsLobbyGraphHandler("update");
+        
+        // update src to stop referencing other series
+        playerProfilesMetadata[profileName]["defn"] = "User entry";
+        const profile_src_dropdown = document.querySelector('#profile_src');
+        profile_src_dropdown.value = "User entry";
     }
+}
+
+// plot handling
+function allProfilesGraphHandler(type){
+    const allProfilesGraph = document.getElementById('all_profiles_graph');
+
+    var data = [];
+    const x_vals = playerProfilesSeries["Player 1"].map(x => x.stage);
+    for (profileName in playerProfilesSeries) {
+        var series = {
+            x: x_vals,
+            y: playerProfilesSeries[profileName].map(x => x.strength),
+            type: 'scatter',
+            name: profileName
+        };
+        data.push(series);
+    }
+
+    var layout = {
+        title: {text: 'Strengths (all profiles)'},
+        margin: {
+          t: 40,          // Reduces default 100px top margin
+          l: 50,          // Tightens left side
+          r: 20,          // Tightens right side
+          b: 40           // Tightens bottom side
+        },
+        xaxis: {
+          automargin: true,
+          title: {
+            text: 'Stage',
+            standoff: 10  // Reduces space between ticks and title
+          },
+          tickangle: 270
+        },
+        yaxis: {
+          automargin: true,
+          title: {
+            text: 'Board strength',
+            standoff: 10  // Reduces space between ticks and title
+          },
+          range: [0, 110]
+        }
+    };
+    var config = {
+        responsive:true // maybe disable if performance issues
+    };
+
+    if (type === "init") {
+        Plotly.newPlot( allProfilesGraph, data, layout, config );
+    } else {
+        Plotly.react( allProfilesGraph, data, layout, config );
+    }
+}
+
+// zero error checking quick version solely for plotting
+function computeWinrate(str1, str2, type1, type2) {
+    var matchup_mult = matchups.find(x => x.row === type1)[type2];
+    if (matchup_mult === "") {
+        // triangular matrix, check opposite entry
+        matchup_mult = matchups.find(x => x.row === type2)[type1];
+        str2 = str2.map(x => x*matchup_mult);
+    } else {
+        str1 = str1.map(x => x*matchup_mult); // matchup mult is multipler on your odds, not your winrate
+    }
+    return str1.map((x, i) => x/(x+str2[i]));
+}
+
+function vsLobbyGraphHandler(type){
+    const profileVsLobby = document.getElementById('profile_vs_lobby');
+    const prof_sel_dropdown = document.querySelector('#prof_sel');
+    const targetProfile = prof_sel_dropdown.value;
+    const str1 = playerProfilesSeries[targetProfile].map(x => x.strength);
+    const type1 = playerProfilesMetadata[targetProfile]["comp_type"];
+
+    var data = [];
+    const x_vals = playerProfilesSeries["Player 1"].map(x => x.stage);
+    for (profileName in playerProfilesSeries) {
+        if (profileName != targetProfile) {
+            var str2 = playerProfilesSeries[profileName].map(x => x.strength);
+            const type2 = playerProfilesMetadata[profileName]["comp_type"];
+            var y_vals = computeWinrate(str1, str2, type1, type2);
+
+            var series = {
+                x: x_vals,
+                y: y_vals,
+                type: 'scatter',
+                name: profileName
+            };
+            data.push(series);
+        }
+    }
+
+    var layout = {
+        title: {text: `Winrate vs all others (${targetProfile})`},
+        margin: {
+          t: 40,          // Reduces default 100px top margin
+          l: 50,          // Tightens left side
+          r: 20,          // Tightens right side
+          b: 40           // Tightens bottom side
+        },
+        xaxis: {
+          automargin: true,
+          title: {
+            text: 'Stage',
+            standoff: 10  // Reduces space between ticks and title
+          },
+          tickangle: 270
+        },
+        yaxis: {
+          automargin: true,
+          title: {
+            text: 'Win %',
+            standoff: 10  // Reduces space between ticks and title
+          },
+          tickformat: '.0%',
+          range: [0, 1.0],
+          dtick: 0.1
+        }
+    };
+    var config = {
+        responsive:true // maybe disable if performance issues
+    };
+
+    if (type === "init") {
+        Plotly.newPlot( profileVsLobby, data, layout, config );
+    } else {
+        Plotly.react( profileVsLobby, data, layout, config );
+    }
+}
+
+function import_file_cb(event) {
+    const file = event.target.files[0];
+    if (!file) {console.log("No file selected.");return;}
+
+    const reader = new FileReader();
+    
+    reader.onload = (e) => {
+      try {
+        const jsonData = JSON.parse(e.target.result);
+        // console.log('Successfully imported JSON:', jsonData);
+        
+        // update vars
+        numSims = jsonData["numSims"];
+        startStage = jsonData["startStage"]
+        startingHP = jsonData["startingHP"];
+        maxLevel = jsonData["maxLevel"];
+        matchups = jsonData["matchups"];
+        stageDamage = jsonData["stageDamage"];
+        playerProfilesMetadata = jsonData["playerProfilesMetadata"];
+        playerProfilesSeries = jsonData["playerProfilesSeries"];
+        
+      } catch (error) {
+        alert("Error: The file is not a valid JSON format.");
+      }
+    };
+
+    reader.readAsText(file);
+}
+
+function export_button_cb(event) {
+    var data = ({
+                    "numSims" : numSims,
+                    "startStage" : startStage,
+                    "startingHP" : startingHP,
+                    "maxLevel" : maxLevel,
+                    "matchups" : matchups,
+                    "stageDamage" : stageDamage,
+                    "playerProfilesMetadata" : playerProfilesMetadata,
+                    "playerProfilesSeries" : playerProfilesSeries
+                });
+    var output_str = JSON.stringify(data);
+
+    const blob = new Blob([output_str], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+
+    link.href = url;
+    link.setAttribute('download', 'tempo_simmy_settings.json');
+    link.click();
+
+    // Clean up the URL object
+    URL.revokeObjectURL(url);
+
 }
 
 // set up backend
@@ -886,6 +1186,20 @@ profile_src_dropdown.addEventListener('change', (event) => {profile_src_dropdown
 // profile edit saving
 const str_table = document.querySelector('#str_table');
 str_table.addEventListener('blur', (event) => {str_table_cb(event);}, true); // The 'true' is important here to capture the blur event correctly on parent
+
+// import settings
+const import_button = document.querySelector('#import_btn');
+import_button.addEventListener('click', (event) => {document.getElementById('json_import_input').click();});
+const fileInput = document.getElementById('json_import_input');
+fileInput.addEventListener('change', (event) => {import_file_cb(event);});
+
+// export settings
+const export_button = document.querySelector('#export_btn');
+export_button.addEventListener('click', (event) => {export_button_cb(event);});
+
+// ================ graphing init ===================================
+allProfilesGraphHandler("init");
+vsLobbyGraphHandler("init");
 
 // ==============================================================
 
