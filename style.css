@@ -94,6 +94,8 @@ h1 + p {
   overflow: hidden; /* Prevents children from pushing the width out */
 }
 
+
+
 .js-plotly-plot {
     width: 100% !important; /* Force plotly to fill the column */
 }
@@ -134,7 +136,7 @@ h1 + p {
 
 /* Add space above all tables */
 table {
-    margin-top: 20px; /* Adjust this value (e.g., 10px, 30px) to get the desired gap */
+    margin-top: 10px; /* Adjust this value (e.g., 10px, 30px) to get the desired gap */
     border-collapse: collapse; /* Optional: ensures borders don't double up */
     width: 100%; /* Optional: ensures the table fits its container */
 }
@@ -207,7 +209,7 @@ td[contenteditable="true"]:focus {
     overflow-x: hidden;        /* Prevent horizontal scrolling unless necessary */
     border: 1px solid #ccc;    /* Optional: adds a border around the scroll area */
     border-radius: 4px;        /* Optional: matches your UI's rounded corners */
-    margin-top: 20px;          /* Replaces the table's margin-top if desired */
+    margin-top: 10px;          /* Replaces the table's margin-top if desired */
 }
 
 /* Keep the table header visible while scrolling */
@@ -218,6 +220,70 @@ td[contenteditable="true"]:focus {
     z-index: 2;                /* Keeps header above scrolling content */
     border-bottom: 2px solid #ccc;
     margin: 0; /* Ensure no extra margins on the header */
+}
+
+/* Container for alignment */
+.tooltip-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px; /* Space between "Max level" and the icon */
+    position: relative;
+}
+
+/* Info Icon Styling */
+.info-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #eee;
+    color: #666;
+    font-size: 14px;
+    cursor: help;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+/* 1. Base State: Tooltip is completely invisible */
+.info-icon::after {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translateX(calc(-50% + 50px));
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    width: 250px;
+    z-index: 1000000;
+    pointer-events: none;
+}
+
+/* Tooltip Arrow (Optional) */
+/*.info-icon::before {
+    content: '';
+    position: relative;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #333;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}*/
+
+/* Show on Hover */
+.info-icon:hover::after,
+.info-icon:hover::before {
+    opacity: 1 !important;
+    visibility: visible !important;
+    /*transform: translateX(-50%) translateY(-5px);*/
 }
 
 #all_profiles_graph {

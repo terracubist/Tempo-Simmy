@@ -707,7 +707,9 @@ function openTab(evt, tabName) {
     // per-tab processing
     if (tabName === "Simulation Settings") {
         // fix dropdowns 
-        document.querySelector('#n_sims').value = numSims.toExponential().replace('+', '').toUpperCase();;
+        document.querySelector('#n_sims').value = (numSims >= 1e4) 
+                                                  ? numSims.toExponential().replace('+', '').toUpperCase() 
+                                                  : numSims.toString();
         document.querySelector('#start_stage').value = startStage;
 
         // fix tables
@@ -1113,8 +1115,13 @@ function export_button_cb(event) {
 // set up backend
 async function startPyodideEnv() {
 
+    // set up status messages
+    const status_indicator = document.getElementById("load-status");
+    status_indicator.innerText = "Loading simulation environment...";
+
     const pyodide = await loadPyodide();
     window.pyodide = pyodide;
+    status_indicator.innerText += "Done.\nLoading dependencies...";
 
     // Set up a custom batched handler to capture print output
     const outputArray = [];
@@ -1125,16 +1132,18 @@ async function startPyodideEnv() {
     });
 
     // load dependencies
-    const status_indicator = document.getElementById("load-status");
     await pyodide.loadPackage(["pandas", "numpy", "scipy", "networkx"], (message) => {
           // 'message' often contains strings like "Loading..." or progress data
           console.log("Loading packages...");
       }
     ).then(() => {
-        status_indicator.textContent = "Finished loading.";
+        status_indicator.innerText += "Done.\nLoading Monte Carlo logic...";
     });
 
     pyodide.runPython(await (await fetch("./pyodide_test.py")).text())
+    status_indicator.innerText += "Done.";
+
+    console.log("Captured output:", outputArray.join('\n'));
 
 }
 
@@ -1201,10 +1210,6 @@ export_button.addEventListener('click', (event) => {export_button_cb(event);});
 allProfilesGraphHandler("init");
 vsLobbyGraphHandler("init");
 
-// ==============================================================
+// ================ set up python env ===================================
 
-// set up python env
-
-// startPyodideEnv(); //disabling while figuring out html/css
-// console.log("Captured output:", outputArray.join('\n'));
-
+startPyodideEnv(); //disabling while figuring out html/css
