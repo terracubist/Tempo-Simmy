@@ -1140,7 +1140,7 @@ async function startPyodideEnv() {
         status_indicator.innerText += "Done.\nLoading Monte Carlo logic...";
     });
 
-    pyodide.runPython(await (await fetch("./pyodide_test.py")).text())
+    pyodide.runPython(await (await fetch("./lobby_sim.py")).text())
     status_indicator.innerText += "Done.";
 
     console.log("Captured output:", outputArray.join('\n'));
